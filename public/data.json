@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1,
+  "name": "Ayesha Rahman",
+  "picture": "https://randomuser.me/api/portraits/women/21.jpg",
+  "email": "ayesha.rahman@gmail.com",
+  "days_since_contact": 18,
+  "status": "overdue",
+  "tags": [
+   "university",
+   "best friend"
+  ],
+  "bio": "Studied computer science together at Dhaka University. Loves traveling and photography.",
+  "goal": 14,
+  "next_due_date": "2026-04-10"
+ },
+ {
+  "id": 2,
+  "name": "Michael Carter",
+  "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+  "email": "michael.carter@outlook.com",
+  "days_since_contact": 12,
+  "status": "almost due",
+  "tags": [
+   "work",
+   "manager"
+  ],
+  "bio": "Former team lead at a software company. Mentored me during my first job.",
+  "goal": 14,
+  "next_due_date": "2026-04-16"
+ },
+ {
+  "id": 3,
+  "name": "Fatima Noor",
+  "picture": "https://randomuser.me/api/portraits/women/45.jpg",
+  "email": "fatima.noor@yahoo.com",
+  "days_since_contact": 5,
+  "status": "on-track",
+  "tags": [
+   "family",
+   "cousin"
+  ],
+  "bio": "Lives in Chittagong. We often talk about family events and life updates.",
+  "goal": 10,
+  "next_due_date": "2026-04-20"
+ },
+ {
+  "id": 4,
+  "name": "David Kim",
+  "picture": "https://randomuser.me/api/portraits/men/14.jpg",
+  "email": "david.kim@gmail.com",
+  "days_since_contact": 20,
+  "status": "overdue",
+  "tags": [
+   "gym",
+   "fitness buddy"
+  ],
+  "bio": "Met at the gym in 2022. We used to train together every morning.",
+  "goal": 7,
+  "next_due_date": "2026-04-09"
+ },
+ {
+  "id": 5,
+  "name": "Sara Ahmed",
+  "picture": "https://randomuser.me/api/portraits/women/30.jpg",
+  "email": "sara.ahmed@protonmail.com",
+  "days_since_contact": 13,
+  "status": "almost due",
+  "tags": [
+   "school",
+   "classmate"
+  ],
+  "bio": "High school friend. We reconnect occasionally to share life updates.",
+  "goal": 14,
+  "next_due_date": "2026-04-15"
+ },
+ {
+  "id": 6,
+  "name": "Omar Hassan",
+  "picture": "https://randomuser.me/api/portraits/men/50.jpg",
+  "email": "omar.hassan@gmail.com",
+  "days_since_contact": 3,
+  "status": "on-track",
+  "tags": [
+   "colleague",
+   "developer"
+  ],
+  "bio": "Works with me on frontend projects. We collaborate on React applications.",
+  "goal": 7,
+  "next_due_date": "2026-04-18"
+ },
+ {
+  "id": 7,
+  "name": "Emily Johnson",
+  "picture": "https://randomuser.me/api/portraits/women/60.jpg",
+  "email": "emily.johnson@mail.com",
+  "days_since_contact": 15,
+  "status": "overdue",
+  "tags": [
+   "travel",
+   "friend"
+  ],
+  "bio": "Met during a trip to Thailand. We keep in touch about travel plans.",
+  "goal": 14,
+  "next_due_date": "2026-04-12"
+ },
+ {
+  "id": 8,
+  "name": "Rashid Khan",
+  "picture": "https://randomuser.me/api/portraits/men/70.jpg",
+  "email": "rashid.khan@gmail.com",
+  "days_since_contact": 11,
+  "status": "almost due",
+  "tags": [
+   "business",
+   "client"
+  ],
+  "bio": "Runs an e-commerce business. We worked together on a website project.",
+  "goal": 14,
+  "next_due_date": "2026-04-17"
+ },
+ {
+  "id": 9,
+  "name": "Nusrat Jahan",
+  "picture": "https://randomuser.me/api/portraits/women/10.jpg",
+  "email": "nusrat.jahan@gmail.com",
+  "days_since_contact": 6,
+  "status": "on-track",
+  "tags": [
+   "neighbor",
+   "family friend"
+  ],
+  "bio": "Lives next door to my parents. Always helpful during family gatherings.",
+  "goal": 10,
+  "next_due_date": "2026-04-19"
+ },
+ {
+  "id": 10,
+  "name": "James Wilson",
+  "picture": "https://randomuser.me/api/portraits/men/80.jpg",
+  "email": "james.wilson@company.com",
+  "days_since_contact": 17,
+  "status": "overdue",
+  "tags": [
+   "mentor",
+   "career"
+  ],
+  "bio": "Guided me during career transition into tech. Provides valuable advice.",
+  "goal": 14,
+  "next_due_date": "2026-04-11"
+ }
+]
