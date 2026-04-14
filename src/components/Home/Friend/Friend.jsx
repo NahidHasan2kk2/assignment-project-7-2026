@@ -1,4 +1,5 @@
 import React, { use } from 'react';
+import { Link } from 'react-router';
 
 const Friend = ({ friendsData }) => {
  const statusClass = {
@@ -13,13 +14,13 @@ const Friend = ({ friendsData }) => {
   <div className='grid lg:grid-cols-4 md:grid-cols-2 gap-5 bg-base-300 shadow-2xl p-2'>
 
    {
-    friends.map(friend => <div key={friend.id} className="card bg-base-100  shadow-sm">
+    friends.map(friend => <Link to={`/friendDetails/${friend.id}`} key={friend.id} className="card bg-base-100  shadow-sm">
      <figure className="px-10 pt-10 ">
       <img className='w-[80px] rounded-full' src={friend.picture} alt="" />
      </figure>
      <div className="card-body items-center text-center">
       <h2 className="card-title font-bold text-xl">{friend.name}</h2>
-      <p className='opacity-80'>62d ago</p>
+      <p className='opacity-80'>{friend.days_since_contact} Days</p>
       <div className='flex justify-around
       '>
        {
@@ -37,7 +38,7 @@ const Friend = ({ friendsData }) => {
        </button>
       </div>
      </div>
-    </div>)
+    </Link>)
    }
   </div>
  );
