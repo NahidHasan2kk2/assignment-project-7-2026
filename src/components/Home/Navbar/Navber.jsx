@@ -14,8 +14,8 @@ const Navber = () => {
  </>
 
  return (
-  <div className="navbar bg-base-100 shadow-sm">
-   <div className="flex-1">
+  <div className="navbar bg-base-100 shadow-sm block md:flex lg:flex top-0 sticky z-50">
+   <div className="flex-1 ">
     <img className='text-black' src={iconImg} alt="icon img" />
 
    </div>

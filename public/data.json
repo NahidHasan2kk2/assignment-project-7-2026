@@ -7,8 +7,9 @@
   "days_since_contact": 18,
   "status": "overdue",
   "tags": [
-   "university",
-   "best friend"
+   "college",
+   "travel",
+   "hobby"
   ],
   "bio": "Studied computer science together at Dhaka University. Loves traveling and photography.",
   "goal": 14,
@@ -22,8 +23,7 @@
   "days_since_contact": 12,
   "status": "almost due",
   "tags": [
-   "work",
-   "manager"
+   "work"
   ],
   "bio": "Former team lead at a software company. Mentored me during my first job.",
   "goal": 14,
@@ -37,8 +37,7 @@
   "days_since_contact": 5,
   "status": "on-track",
   "tags": [
-   "family",
-   "cousin"
+   "family"
   ],
   "bio": "Lives in Chittagong. We often talk about family events and life updates.",
   "goal": 10,
@@ -52,8 +51,8 @@
   "days_since_contact": 20,
   "status": "overdue",
   "tags": [
-   "gym",
-   "fitness buddy"
+   "work",
+   "hobby"
   ],
   "bio": "Met at the gym in 2022. We used to train together every morning.",
   "goal": 7,
@@ -67,8 +66,7 @@
   "days_since_contact": 13,
   "status": "almost due",
   "tags": [
-   "school",
-   "classmate"
+   "college"
   ],
   "bio": "High school friend. We reconnect occasionally to share life updates.",
   "goal": 14,
@@ -82,8 +80,7 @@
   "days_since_contact": 3,
   "status": "on-track",
   "tags": [
-   "colleague",
-   "developer"
+   "work"
   ],
   "bio": "Works with me on frontend projects. We collaborate on React applications.",
   "goal": 7,
@@ -98,7 +95,7 @@
   "status": "overdue",
   "tags": [
    "travel",
-   "friend"
+   "college"
   ],
   "bio": "Met during a trip to Thailand. We keep in touch about travel plans.",
   "goal": 14,
@@ -112,8 +109,7 @@
   "days_since_contact": 11,
   "status": "almost due",
   "tags": [
-   "business",
-   "client"
+   "work"
   ],
   "bio": "Runs an e-commerce business. We worked together on a website project.",
   "goal": 14,
@@ -127,8 +123,7 @@
   "days_since_contact": 6,
   "status": "on-track",
   "tags": [
-   "neighbor",
-   "family friend"
+   "family"
   ],
   "bio": "Lives next door to my parents. Always helpful during family gatherings.",
   "goal": 10,
@@ -142,8 +137,7 @@
   "days_since_contact": 17,
   "status": "overdue",
   "tags": [
-   "mentor",
-   "career"
+   "work"
   ],
   "bio": "Guided me during career transition into tech. Provides valuable advice.",
   "goal": 14,

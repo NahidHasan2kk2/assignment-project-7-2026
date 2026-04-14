@@ -5,10 +5,12 @@ import Footer from '../../components/Home/Footer/Footer';
 
 const MainLayout = () => {
  return (
-  <div className='container mx-auto'>
+  <div>
    <Navber></Navber>
-   <Outlet></Outlet>
-   <Footer></Footer>
+   <div className='container mx-auto'>
+    <Outlet></Outlet>
+    <Footer></Footer>
+   </div>
   </div>
  );
 };
