@@ -1,23 +1,47 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FaComment, FaPhone, FaVideo } from 'react-icons/fa';
 import { HiOutlineBellSnooze } from 'react-icons/hi2';
 import { IoArchiveOutline } from 'react-icons/io5';
 import { MdOutlineDeleteOutline } from 'react-icons/md';
 import { useLoaderData, useParams } from 'react-router';
+import { FriendContext } from '../../../contextApi/FriendsProvider';
+import { toast } from 'react-toastify';
 
 const FriendDetails = () => {
- const friends = useLoaderData();
- console.log(friends);
- const params = useParams();
- console.log(params.id);
- const selectedFriend = friends.find(friend => friend.id == params.id);
- console.log(selectedFriend);
+
+ const { friend, setFriend } = useContext(FriendContext);
+
 
  const statusClass = {
   "overdue": "bg-red-500 text-white",
   "almost due": "bg-yellow-400 text-black",
   "on-track": "bg-green-500 text-white"
  };
+
+ const friends = useLoaderData();
+ // console.log(friends);
+ const params = useParams();
+ // console.log(params.id);
+ const selectedFriend = friends.find(friend => friend.id == params.id);
+ // console.log(selectedFriend);
+
+
+ const handleCallButton = (selectedFriend) => {
+
+  toast.success(`${selectedFriend.name} added successfully!`);
+  const newAddFriend = {
+   ...selectedFriend,
+   type: 'call',
+   date: new Date().toLocaleDateString(),
+   time: new Date().toLocaleTimeString()
+  };
+  setFriend([...friend, newAddFriend]);
+
+
+
+
+
+ }
 
  return (
   <div className="max-w-6xl mx-auto p-4 grid grid-cols-1 md:grid-cols-3 gap-5 rounded-xl border-1 my-2">
@@ -91,17 +115,17 @@ const FriendDetails = () => {
      <h3 className="mb-4 font-semibold">Quick Check-In</h3>
 
      <div className="grid grid-cols-3 gap-4">
-      <button className="border p-4 rounded flex flex-col items-center">
+      <button onClick={() => handleCallButton(selectedFriend)} className=" border p-4 rounded flex flex-col cursor-pointer  hover:bg-blue-200 items-center">
        <FaPhone />
        Call
       </button>
 
-      <button className="border p-4 rounded flex flex-col items-center">
+      <button className=" border p-4 rounded cursor-pointer hover:bg-blue-200 flex flex-col items-center">
        <FaComment />
        Text
       </button>
 
-      <button className="border p-4 rounded flex flex-col items-center">
+      <button className=" border p-4 hover:bg-blue-200 cursor-pointer rounded flex flex-col items-center">
        <FaVideo />
        Video
       </button>
