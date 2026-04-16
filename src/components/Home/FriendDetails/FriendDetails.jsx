@@ -28,7 +28,10 @@ const FriendDetails = () => {
 
  const handleCallButton = (selectedFriend) => {
 
-  toast.success(`${selectedFriend.name} added successfully!`);
+  toast.success(`${selectedFriend.name} added call successfully!`, {
+   position: "top-center"
+  })
+
   const newAddFriend = {
    ...selectedFriend,
    type: 'call',
@@ -36,10 +39,31 @@ const FriendDetails = () => {
    time: new Date().toLocaleTimeString()
   };
   setFriend([...friend, newAddFriend]);
+ }
+ const handleTextButton = (selectedFriend) => {
+  toast.info(`${selectedFriend.name} added text successfully!`, {
+   position: "top-center"
+  })
+  const newAddFriend = {
+   ...selectedFriend,
+   type: 'text',
+   date: new Date().toLocaleDateString(),
+   time: new Date().toLocaleTimeString()
+  };
+  setFriend([...friend, newAddFriend]);
+ }
 
-
-
-
+ const handleVedioButton = (selectedFriend) => {
+  toast.warn(`${selectedFriend.name} added vedio successfully!`, {
+   position: "top-center"
+  })
+  const newAddFriend = {
+   ...selectedFriend,
+   type: 'video',
+   date: new Date().toLocaleDateString(),
+   time: new Date().toLocaleTimeString()
+  };
+  setFriend([...friend, newAddFriend]);
 
  }
 
@@ -120,12 +144,12 @@ const FriendDetails = () => {
        Call
       </button>
 
-      <button className=" border p-4 rounded cursor-pointer hover:bg-blue-200 flex flex-col items-center">
+      <button onClick={() => handleTextButton(selectedFriend)} className=" border p-4 rounded cursor-pointer hover:bg-blue-200 flex flex-col items-center">
        <FaComment />
        Text
       </button>
 
-      <button className=" border p-4 hover:bg-blue-200 cursor-pointer rounded flex flex-col items-center">
+      <button onClick={() => handleVedioButton(selectedFriend)} className=" border p-4 hover:bg-blue-200 cursor-pointer rounded flex flex-col items-center">
        <FaVideo />
        Video
       </button>
