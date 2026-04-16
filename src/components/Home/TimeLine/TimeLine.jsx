@@ -64,22 +64,30 @@ const TimeLine = () => {
 
             </div>
          </div>
+
          {
-            filteredFriend.map((fd, ind) => <div
-               key={ind}
-               className='flex items-center gap-5 border-1 rounded py-1 px-4 mb-2'>
-               <div>
-                  <img src={
-                     fd.type === 'call' ? callImg :
-                        fd.type === 'video' ? vedioImg :
-                           textImg
-                  } alt="" />
+            filteredFriend.length > 0
+               ?
+               filteredFriend.map((fd, ind) => <div
+                  key={ind}
+                  className='flex items-center gap-5 border-1 rounded py-1 px-4 mb-2'>
+                  <div>
+                     <img src={
+                        fd.type === 'call' ? callImg :
+                           fd.type === 'video' ? vedioImg :
+                              textImg
+                     } alt="" />
+                  </div>
+                  <div>
+                     <h1><span className='font-bold text-xl'>{fd.type}</span> with <span className='font-bold'> {fd.name} </span></h1>
+                     <p>{fd.date} <span className='ml-2'> {fd.time}</span></p>
+                  </div>
+               </div>)
+               :
+               <div className='bg-base-300 flex justify-center rounded items-center font-bold opacity-80 text-3xl h-[150px]'>
+                  <h1>No timeline added yet !</h1>
+
                </div>
-               <div>
-                  <h1><span className='font-bold text-xl'>{fd.type}</span> with <span className='font-bold'> {fd.name} </span></h1>
-                  <p>{fd.date} <span className='ml-2'> {fd.time}</span></p>
-               </div>
-            </div>)
          }
 
       </div >

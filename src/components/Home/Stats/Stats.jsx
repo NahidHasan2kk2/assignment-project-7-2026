@@ -13,6 +13,7 @@ const Stats = () => {
   { name: "Text", value: textCount },
   { name: "video", value: videoCount }
  ];
+
  const COLORS = ["#0088FE", "#00C49F", "#FFBB28"];
 
  return (
@@ -23,27 +24,35 @@ const Stats = () => {
    <div style={{ width: "100%", height: 300 }}>
 
     <h2 className='pl-5 font-semibold'>By Interaction Type</h2>
+    {
+     friend.length > 0
+      ?
+      <ResponsiveContainer>
+       <PieChart>
+        <Pie
+         data={chartData}
+         dataKey="value"
+         nameKey="name"
+         innerRadius={80}
+         outerRadius={100}
+         paddingAngle={3}
+         label
+        >
+         {chartData.map((entry, index) => (
+          <Cell key={index} fill={COLORS[index % COLORS.length]} />
+         ))}
+        </Pie>
 
-    <ResponsiveContainer>
-     <PieChart>
-      <Pie
-       data={chartData}
-       dataKey="value"
-       nameKey="name"
-       innerRadius={80}
-       outerRadius={100}
-       paddingAngle={3}
-       label
-      >
-       {chartData.map((entry, index) => (
-        <Cell key={index} fill={COLORS[index % COLORS.length]} />
-       ))}
-      </Pie>
+        <Tooltip />
+        <Legend />
+       </PieChart>
+      </ResponsiveContainer>
+      :
+      <div className='bg-base-300 flex justify-center rounded items-center font-bold opacity-80 text-3xl h-[150px]'>
+       <h1>No chart added yet !</h1>
 
-      <Tooltip />
-      <Legend />
-     </PieChart>
-    </ResponsiveContainer>
+      </div>
+    }
    </div>
   </div>
 
