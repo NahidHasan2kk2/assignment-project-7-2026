@@ -27,11 +27,9 @@ const FriendDetails = () => {
 
 
  const handleCallButton = (selectedFriend) => {
-
   toast.success(`${selectedFriend.name} added call successfully!`, {
    position: "top-center"
   })
-
   const newAddFriend = {
    ...selectedFriend,
    type: 'call',
@@ -40,6 +38,8 @@ const FriendDetails = () => {
   };
   setFriend([...friend, newAddFriend]);
  }
+
+
  const handleTextButton = (selectedFriend) => {
   toast.info(`${selectedFriend.name} added text successfully!`, {
    position: "top-center"
@@ -52,6 +52,7 @@ const FriendDetails = () => {
   };
   setFriend([...friend, newAddFriend]);
  }
+
 
  const handleVedioButton = (selectedFriend) => {
   toast.warn(`${selectedFriend.name} added vedio successfully!`, {

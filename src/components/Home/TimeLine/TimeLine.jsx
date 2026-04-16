@@ -6,33 +6,37 @@ import vedioImg from '../../../assets/images/video.png'
 
 const TimeLine = () => {
    const { friend } = useContext(FriendContext);
-   const [filterType, setFilterType] = useState('all');
-   console.log(filterType);
-   const handleAll = (all) => {
 
+   const [filterType, setFilterType] = useState('all');
+
+   const handleAll = (all) => {
       setFilterType(all);
       document.activeElement.blur();
    }
-   const handleCall = (call) => {
 
+   const handleCall = (call) => {
       setFilterType(call);
       document.activeElement.blur();
-   }
-   const handleVideo = (video) => {
 
+   }
+
+   const handleVideo = (video) => {
       setFilterType(video);
       document.activeElement.blur();
    }
-   const handleText = (text) => {
 
+   const handleText = (text) => {
       setFilterType(text);
       document.activeElement.blur();
    }
+
 
    const filteredFriend =
       filterType === 'all'
          ? friend
          : friend.filter(fd => fd.type === filterType);
+
+
    return (
 
       <div className='my-10'>
