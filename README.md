@@ -1,16 +1,17 @@
-# React + Vite
+# 📌 Project Name
+assignment-project-7-2026
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📝 Description
+This is the 7th assignment for my course journey . here is i learnd how to build a project using by react and react router . and dynamic functionalitice for route.
 
-Currently, two official plugins are available:
+## ⚙️ Technologies Used
+- React
+- JavaScript
+- Tailwind CSS with daisyUi
+- Recharts
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+- 📊 loading json data and display friends data in home page.
+- 👥 click single friend and seen the friend details
+- 👥 try to call ,text,and vedio with the friend and hold the history in a beautiful timeline and filtered the all history.
+- 🔍  create a pie chart depends on the timeLine histoy and under the all page a beautiful footer. 
